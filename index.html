@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Car Rental - Home</title>
+  <link rel="stylesheet" href="homestyle.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body onload="valLogin()">
+  <header class="navbar">
+  <div class="navbar-container">
+    <div class="logo">
+      <a href="#">Car Rental</a>
+    </div>
+    <nav class="nav-links" id="navLinks">
+      <a onclick="checkLogin()">My Bookings</a>
+      <div id="loginbtn" class="loginbtn"></div>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </div>
+</header>
+  <div class="top-section">
+    <div class="img-slider" id="slider">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="images/car1.webp" class="slide active" alt="Car 1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/car2.webp" class="slide" alt="Car 2" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/car3.webp" class="slide" alt="Car 2" />
+          </div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+      <div class="location-form">
+        <div class="form-title">
+          <p>Looking for Best Car Rentals?</p>
+        </div>
+
+        <form>
+          <div class="city-option">
+            <label for="city">Book Self-Drive Cars in</label>
+            <select id="city" name="city">
+              <option value="Bhopal">Bhopal</option>
+              <option value="Indore">Indore</option>
+              <option value="Ujjain">Ujjain</option>
+            </select>
+          </div>
+          <div class="search-btn">
+            <button type="submit">Search</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="center-section">
+    <div class="car-slider">
+      <div class="car-heading">
+        <p id="citytitle">Top cars in Bhopal</p>
+      </div>
+      <div class="car-col-list">
+        <div class="car-card">
+          <div class="car-prev">
+            <img src="images/dzire.webp" alt="" />
+            <p class="car-name"><a href="cardetail.html">Dzire</a></p>
+            <div class="car-meta">
+              <p class="car-rating">4.6 (278)</p>
+              <p class="car-rev">Excellent</p>
+            </div>
+            <p class="car-type">
+              Manual . Petrol . 5 Seats
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="car-footer-left">
+              <p class="car-deli">
+                Delivery Available
+              </p>
+              <p class="car-price">₹60/hr</p>
+            </div>
+            <p class="car-dis">4.0 km away</p>
+          </div>
+        </div>
+        <div class="car-card">
+          <div class="car-prev">
+            <img src="images/safari.webp" alt="" />
+            <p class="car-name"><a href="cardetail.html">Tata Safari</a></p>
+            <div class="car-meta">
+              <p class="car-rating">4.6 (278)</p>
+              <p class="car-rev">Excellent</p>
+            </div>
+            <p class="car-type">
+              Manual . Petrol . 5 Seats
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="car-footer-left">
+              <p class="car-deli">
+                Delivery Available
+              </p>
+              <p class="car-price">₹60/hr</p>
+            </div>
+            <p class="car-dis">4.0 km away</p>
+          </div>
+        </div>
+        <div class="car-card">
+          <div class="car-prev">
+            <img src="images/nexon.avif" alt="" />
+            <p class="car-name"><a href="cardetail.html">Tata Nexon</a></p>
+            <div class="car-meta">
+              <p class="car-rating">4.6 (278)</p>
+              <p class="car-rev">Excellent</p>
+            </div>
+            <p class="car-type">
+              Manual . Petrol . 5 Seats
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="car-footer-left">
+              <p class="car-deli">
+                Delivery Available
+              </p>
+              <p class="car-price">₹60/hr</p>
+            </div>
+            <p class="car-dis">4.0 km away</p>
+          </div>
+        </div>
+        <div class="car-card">
+          <div class="car-prev">
+            <img src="images/citroen.webp" alt="" />
+            <p class="car-name"><a href="cardetail.html">Citroen</a></p>
+            <div class="car-meta">
+              <p class="car-rating">4.6 (278)</p>
+              <p class="car-rev">Excellent</p>
+            </div>
+            <p class="car-type">
+              Manual . Petrol . 5 Seats
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="car-footer-left">
+              <p class="car-deli">
+                Delivery Available
+              </p>
+              <p class="car-price">₹60/hr</p>
+            </div>
+            <p class="car-dis">4.0 km away</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="site-footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h2>Car Rental</h2>
+        <p>Your trusted partner for self-drive car rentals across major cities.</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Cars</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p>Email: support@carrental.com</p>
+        <p>Phone: +91 9123456789</p>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook fa-2xl" style="color:white"></i> Facebook</a>
+          <a href="#"><i class="fa-brands fa-instagram fa-2xl" style="color: white;"></i> Instagram</a>
+          <a href="#"><i class="fa-brands fa-twitter fa-2xl" style="color: white;"></i> Twitter</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Car Rental. All rights reserved.</p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

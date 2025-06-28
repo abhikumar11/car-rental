@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental - Booking Details</title>
+    <link rel="stylesheet" href="bookdetails.css" />
+</head>
+<body onload="valLogin()">
+    <header class="navbar">
+  <div class="navbar-container">
+    <div class="logo">
+      <a href="index.html">Car Rental</a>
+    </div>
+    <nav class="nav-links" id="navLinks">
+      <a onclick="checkLogin()">My Bookings</a>
+      <div id="loginbtn"></div>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </div>
+</header>
+   <div class="book-details">
+    <h1>Booking Details</h1>
+    <div class="search-box">
+    <label>Search</label>
+     <input type="text" id="searchinp" oninput="searchData()"/>
+     </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Booking ID</th>
+                <th>Pickup Location</th>
+                <th>Pickup Date/Time</th>
+                <th>Return Date/Time</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="booking-table"></tbody>
+    </table>
+    </div>
+    <div class="edit-form"></div>
+    <script src="bookdetail.js"></script>
+</body>
+</html>

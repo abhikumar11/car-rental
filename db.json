@@ -1,0 +1,18 @@
+{
+  "booking": [
+    {
+      "pickuploc": "Board Office",
+      "startdate": "2025-06-29T13:52",
+      "enddate": "2025-06-30T17:52",
+      "price": "1680",
+      "id": "7e04"
+    },
+    {
+      "id": "7bb5",
+      "pickuploc": "Board Office",
+      "startdate": "2025-06-30T01:15",
+      "enddate": "2025-07-01T01:16",
+      "price": "1500"
+    }
+  ]
+}

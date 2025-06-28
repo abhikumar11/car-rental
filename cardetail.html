@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Car Details - Booking</title>
+  <link rel="stylesheet" href="cardetail.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body onload="valLogin()">
+  <header class="navbar">
+    <div class="navbar-container">
+      <div class="logo">
+        <a href="index.html">Car Rental</a>
+      </div>
+      <nav class="nav-links" id="navLinks">
+        <a onclick="checkLogin()">My Bookings</a>
+        <div id="loginbtn" class="loginbtn"></div>
+        <a href="#">Contact</a>
+      </nav>
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <div class="car-details-container">
+    <div class="car-info-section">
+      <img src="images/swift.webp" alt="Swift" class="car-image" />
+      <h2>Swift</h2>
+      <p class="car-rating">4.6 ★ (278 reviews)</p>
+      <p class="car-specs">Manual • Petrol • 5 Seats</p>
+      <p class="car-desc">
+        The Maruti Swift 2022 offers a smooth driving experience with high fuel efficiency. It is ideal for both city
+        rides and highway trips.
+      </p>
+      <p class="car-price"><strong>₹60/hr</strong></p>
+    </div>
+    <div class="booking-form-section">
+      <h3>Book This Car</h3>
+      <form id="bookingForm">
+        <label for="pickup">Pickup Location</label>
+        <input type="text" id="pickuploc" placeholder="Enter location" required />
+        <label for="start">Start Date & Time</label>
+        <input type="datetime-local" onchange="getPrice()" id="startdate" required />
+        <label for="end">End Date & Time</label>
+        <input type="datetime-local" onchange="getPrice()" id="enddate" required />
+        <label for="price">Total Price (₹60/hr)</label>
+        <input type="text" id="totalprice" readonly placeholder="₹0" />
+        <div class="bookbtn" id="bookbtn">
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="site-footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h2>Car Rental</h2>
+        <p>Your trusted partner for self-drive car rentals across major cities.</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Cars</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p>Email: support@carrental.com</p>
+        <p>Phone: +91 9123456789</p>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook fa-2xl" style="color:white"></i> Facebook</a>
+          <a href="#"><i class="fa-brands fa-instagram fa-2xl" style="color: white;"></i> Instagram</a>
+          <a href="#"><i class="fa-brands fa-twitter fa-2xl" style="color: white;"></i> Twitter</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Car Rental. All rights reserved.</p>
+    </div>
+  </div>
+
+  <script src="cardetail.js"></script>
+</body>
+
+</html>
